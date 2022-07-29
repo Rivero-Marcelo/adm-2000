@@ -2,13 +2,18 @@
 
 use src\Controllers\LoginController;
 use src\Controllers\UsuarioController;
+use src\Controllers\ViewController;
 use src\Router\Router;
 
 require "../vendor/autoload.php";
 
-Router::AddGet("/login", [LoginController::class, 'index']);
+Router::AddGet('/adm', [ViewController::class, 'render'], ['HomeView', ['mensaje' => null]]);
 
-Router::AddGet("/usuario/alta", [UsuarioController::class, 'index']);
+Router::AddGet("/adm/login", [ViewController::class, 'render'], ['LoginView']);
+
+Router::AddGet("/adm/home", [ViewController::class, 'render'], ['HomeView', ['mensaje' => 'En Construcción...']]);
+
+Router::AddGet("/usuario/alta", [UsuarioController::class, 'index'], [null]);
 
 
 

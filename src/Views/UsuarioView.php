@@ -9,7 +9,46 @@
   <body>
 
 
-   <?php echo "Alta Usuario"; ?>
+   
+  <div class="container">
+
+  <h1>Nuevo Usuario</h1>
+
+      <form class="row g-3 mt-3 border border-primary">
+
+          <div class="col-6">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+          </div>
+
+          <div class="col-6">
+            <label for="pass" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+          </div>
+
+          <div class="col-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+          </div>
+
+          <div class="col-6">
+            <label for="pass" class="form-label">Apellido</label>
+            <input type="password" class="form-control" id="pass" placeholder="Apellido">
+          </div>
+
+          <div class="col-12 mb-3">
+            <label for="mail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="mail" placeholder="E-mail">
+          </div>
+
+      </form>
+
+  </div>
+
+
+
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>

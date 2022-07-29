@@ -16,7 +16,7 @@ class BdModel {
 
           $this -> inicializarParametrosDeConexion();
 
-          $this -> conexionBaseDeDatos = new mysqli(
+          $this -> conexionBaseDeDatos = new \mysqli(
               $this -> HostDB,
               $this-> UsuarioBD,
               $this-> PasswordBD,
@@ -29,7 +29,7 @@ class BdModel {
           $this -> HostDB = $_ENV['DB_HOST'];
           $this -> NombreBD = $_ENV['DB_NAME'];
           $this -> UsuarioBD = $_ENV['DB_USER'];
-          $this -> PasswordBD = $_ENV['DB_PASSWORD']
+          $this -> PasswordBD = $_ENV['DB_PASSWORD'];
       }
 
 }

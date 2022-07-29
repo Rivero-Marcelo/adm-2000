@@ -5,15 +5,20 @@ namespace src\Controllers;
 
  class ViewController {
 
-
-
     public static function render($view, $data=[]) {
 
+       // ob_start();
         include dirname(__DIR__) . "/Views/$view.php";
 
+        //$columna1 = ob_get_clean();
+
+        //include dirname(__DIR__) . "/Views/$view.php";
+        
+        //$pagina = ob_get_clean();
+
+        //echo "hola";
+
     }
-
-
 
     public static function NotFound() {
 

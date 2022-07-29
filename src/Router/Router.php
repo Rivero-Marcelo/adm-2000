@@ -15,12 +15,13 @@ public static $metodoActual;
 
 
 
-public static function AddGet($url, $funcion){
+public static function AddGet($url, $funcion, $args){
 
    array_push(self::$rutasGet, [
 
         'url' => $url,
         'funcion' => $funcion,
+        'args' => $args
 
     ]); 
 
@@ -66,7 +67,7 @@ public static function Run(){
 
    if($resultado){
     
-    call_user_func($resultado['funcion']);
+    call_user_func_array($resultado['funcion'], $resultado['args']);
 
    }else{
     

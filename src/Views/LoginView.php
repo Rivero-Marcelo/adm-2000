@@ -26,7 +26,7 @@
     <div class="container w-75 bg-light mt-4 rounded shadow"> 
       <div class="row">
 
-        <div class="col bg">
+        <div class="col-7 bg">
 
         </div>
  
@@ -52,7 +52,7 @@
           </form>
 
             <div class="container w-100 mb-5">
-              <br><br>
+              <br><br><br><br><br><br>
               <a href="#">Solicitud de Registro</a>
             </div>
 
