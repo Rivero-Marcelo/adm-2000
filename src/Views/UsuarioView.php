@@ -14,7 +14,7 @@
 
   <h1>Nuevo Usuario</h1>
 
-      <form class="row g-3 mt-3">
+      <form action="/adm/usuario/alta" method="post" class="row g-3 mt-3" >
 
           <div class="col-6">
             <label for="usuario" class="form-label">Usuario</label>
@@ -42,13 +42,15 @@
           </div>
 
           <button type="submit" class="btn btn-primary mb-3">Aceptar</button>
-
-          
-
+ 
       </form>
 
   </div>
 
+
+  <br><br>
+
+  <?=  $data['mensaje'] ?>
 
 
 

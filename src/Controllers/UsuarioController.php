@@ -15,7 +15,7 @@ public static function index() {
 
 
 
-public function Alta(){
+public static function Alta(){
 
     $u = new UsuarioModel();
     $u -> usuario = "";

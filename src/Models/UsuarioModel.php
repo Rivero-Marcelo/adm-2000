@@ -21,6 +21,8 @@ class UsuarioModel extends BdModel {
 
 public function insertar() {
 
+
+
 }
 
 
@@ -34,6 +36,9 @@ public function Listado() {
 
 
 
+private function PasswordToHash($password ){
+  return password_hash($password,PASSWORD_DEFAULT);
+}
 
 
 

@@ -43,10 +43,7 @@ public static function AddPost($url, $funcion, $args){
 
 public static function VerificarRuta(){
 
-    self::$urlActual = $_SERVER['REQUEST_URI'];
-    self::$metodoActual = $_SERVER['REQUEST_METHOD'];
-
-    if(self::$metodoActual === 'GET'){
+      if(self::$metodoActual === 'GET'){
 
         foreach(self::$rutasGet as $ruta){
 
@@ -60,9 +57,29 @@ public static function VerificarRuta(){
         return null;
     }
 
+    if(self::$metodoActual === 'POST'){
+
+        foreach(self::$rutasPost as $ruta){
+
+            if($ruta['url'] === self::$urlActual){
+
+                return $ruta;
+
+            }
+
+
+        }
+
+    }
+
+
+
 }
 
 public static function Run(){
+
+    self::$urlActual = $_SERVER['REQUEST_URI'];
+    self::$metodoActual = $_SERVER['REQUEST_METHOD'];
 
    $resultado = self::VerificarRuta();
 

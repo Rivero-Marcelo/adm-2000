@@ -20,9 +20,6 @@ public static function index(){
 
 
 
-private function PasswordToHash($password){
-    return password_hash($password,PASSWORD_DEFAULT);
-}
 
 
 
