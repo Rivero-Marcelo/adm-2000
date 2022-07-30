@@ -9,9 +9,7 @@ require "../vendor/autoload.php";
 class UsuarioController {
 
 
-public static function index() {
-    ViewController::render('UsuarioView');
-  }
+
 
 
 
@@ -29,11 +27,6 @@ public static function Alta(){
 
 
 public function Baja() {
-
-
-}
-
-public function Modificar() {
 
 
 }
