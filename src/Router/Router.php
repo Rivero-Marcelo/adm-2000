@@ -28,12 +28,13 @@ public static function AddGet($url, $funcion, $args){
 }
 
 
-public static function AddPost($url, $funcion){
+public static function AddPost($url, $funcion, $args){
 
     array_push(self::$rutasPost,[
 
         'url' => $url,
         'funcion'=> $funcion,
+        'args' => $args
 
     ]);
 
