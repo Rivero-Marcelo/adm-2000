@@ -52,7 +52,7 @@
           </form>
 
             <div class="container w-100 mb-5">
-              <br><br><br><br><br><br>
+              <br><br><br>
               <a href="#">Solicitud de Registro</a>
             </div>
 

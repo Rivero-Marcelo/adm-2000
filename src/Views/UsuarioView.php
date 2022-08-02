@@ -18,27 +18,27 @@
 
           <div class="col-6">
             <label for="usuario" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario" name="usuario">
           </div>
 
           <div class="col-6">
             <label for="pass" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+            <input type="password" class="form-control" id="pass" placeholder="Contraseña" name="pass">
           </div>
 
           <div class="col-6">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
           </div>
 
           <div class="col-6">
             <label for="pass" class="form-label">Apellido</label>
-            <input type="password" class="form-control" id="pass" placeholder="Apellido">
+            <input type="text" class="form-control" id="pass" placeholder="Apellido" name="apellido">
           </div>
 
           <div class="col-12 mb-3">
             <label for="mail" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="mail" placeholder="E-mail">
+            <input type="email" class="form-control" id="mail" placeholder="E-mail" name="email">
           </div>
 
           <button type="submit" class="btn btn-primary mb-3">Aceptar</button>
