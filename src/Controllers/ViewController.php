@@ -5,7 +5,7 @@ namespace src\Controllers;
 
  class ViewController {
 
-    public static function Render($view, $data=[]) {
+    public static function Render($view, $args=[]) {
 
        // ob_start();
         include dirname(__DIR__) . "/Views/$view.php";

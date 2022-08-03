@@ -34,7 +34,7 @@
           <div class="text-end"><h3>ADM - 2000</h3></div>
           <h2 class="fw-bold text-center py-5">Inicio de Sesión</h2>
 
-          <form action="#" method="post">
+          <form action="/adm/login" method="post">
             
             <div class="mb-4">
               <label for="" class="form-label">Usuario</label>
@@ -52,7 +52,12 @@
           </form>
 
             <div class="container w-100 mb-5">
-              <br><br><br>
+              <br>
+
+            <span style="color:red"><?= $args['mensaje'] ; ?></span>
+
+            <br><br>
+
               <a href="#">Solicitud de Registro</a>
             </div>
 
