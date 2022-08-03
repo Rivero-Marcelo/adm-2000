@@ -1,6 +1,7 @@
 <?php
 
 use src\Controllers\LoginController;
+use src\Controllers\SesionController;
 use src\Controllers\UsuarioController;
 use src\Controllers\ViewController;
 use src\Router\Router;
@@ -9,7 +10,11 @@ require "../vendor/autoload.php";
 
 Router::AddGet('/adm', [ViewController::class, 'Render'], ['HomeView', ['mensaje' => null]]);
 
-Router::AddGet("/adm/login", [ViewController::class, 'Render'], ['LoginView']);
+Router::AddGet("/adm/login", [ViewController::class, 'Render'], ['LoginView', ['mensaje' => null]]);
+
+Router::AddPost("/adm/login", [SesionController::class, 'InicioDeSesion'], [null]);
+
+
 
 Router::AddGet("/adm/home", [ViewController::class, 'Render'], ['HomeView', ['mensaje' => 'En Construcción...']]);
 

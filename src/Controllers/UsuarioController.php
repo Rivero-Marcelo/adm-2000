@@ -54,11 +54,6 @@ public function Baja() {
 }
 
 
-public function BuscarUsuarioPorNombre() {
-
-
-  
-}
 
 
 
