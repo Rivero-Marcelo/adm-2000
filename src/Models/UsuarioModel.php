@@ -18,9 +18,6 @@ class UsuarioModel extends BdModel {
   public $apellido;
   public $email;
 
-
-
-
 public function Insertar() {
 
   $stmt = $this -> conexionBD -> prepare("INSERT INTO adm_usuarios (usuario,password,fechaHoraDeRegistro,nombre,apellido,email) VALUES (?,?,?,?,?,?)");
