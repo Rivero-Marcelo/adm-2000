@@ -1,5 +1,8 @@
 <?php
 namespace src\Models;
+
+use mysqli_sql_exception;
+
 require "../vendor/autoload.php";
 
 
@@ -16,14 +19,29 @@ class BdModel {
 
           $this -> inicializarParametrosDeConexion();
 
-            $this -> conexionBD = new \mysqli(
+        try{
+
+          $this -> conexionBD = new \mysqli(
             $this -> HostDB,
             $this-> UsuarioBD,
             $this-> PasswordBD,
             $this-> NombreBD
 
           );
-      }
+
+        }catch(mysqli_sql_exception $e){
+
+
+
+        }
+        
+          
+      
+      
+      
+      
+        }
+
 
       private function inicializarParametrosDeConexion(){
           $this -> HostDB = $_ENV['DB_HOST'];

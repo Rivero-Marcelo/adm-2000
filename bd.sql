@@ -1,4 +1,4 @@
-CREATE TABLE `adm`.`adm_usuario` (
+CREATE TABLE `adm`.`adm_usuarios` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `usuario` VARCHAR(20) NOT NULL,
   `password` VARCHAR(255) NOT NULL,

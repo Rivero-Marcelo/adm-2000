@@ -50,9 +50,6 @@
 
   <br><br>
 
-  <?=  $data['mensaje'] ?>
-
-
 
 
     

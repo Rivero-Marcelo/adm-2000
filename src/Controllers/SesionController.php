@@ -8,6 +8,8 @@ require "../vendor/autoload.php";
 
 class SesionController {
 
+  
+
 
 
     public static function InicioDeSesion() {
@@ -22,7 +24,7 @@ class SesionController {
 
         }else{
 
-            $args = ['mensaje' => "ERROR AL INICIAR SESION"];
+            $args = ['mensaje' => SESSION_LOG_FAIL];
 
             ViewController::Render('LoginView', $args);
         }
@@ -51,6 +53,8 @@ class SesionController {
         return password_verify($password, $passwordHash);
       }
       
+
+
 
 
 
